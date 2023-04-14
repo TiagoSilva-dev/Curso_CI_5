@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: configurando credenciais da AWS
-      uses: aws-actions/configure-aws-credentials@v1
+      uses: aws-actions/amazon-ecs-deploy-task-definition@v1.4.10
       with:
         aws-access-key-id: ${{ secrets.ID_CHAVE_ACESSO }}
         aws-secret-access-key: ${{ secrets.CHAVE_SECRETA }}
